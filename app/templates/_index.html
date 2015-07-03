@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <title>Demo - <%= _.slugify(appName)%></title>
+    <link rel="stylesheet" href="../build/<%= _.slugify(appName)%>.debug.css" />
+    <% if (useRem) { %>
+    <script src="//g.alicdn.com/mtb/lib-flexible/0.3.2/??flexible.js"></script>
+    <% } %>
+
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script src="//g.alicdn.com/mtb/lab-reactjs/1.0.0/reactjs.js"></script>
+    <script type="text/javascript" src="../build/<%= _.slugify(appName)%>.debug.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "generator-react-project",
+  "version": "0.0.1",
+  "description": "基于reactjs的项目生成器",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "yeoman-generator": "~0.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "peerDependencies": {
+    "yo": ">=1.4.7"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "author": "fengnu"
+}
