@@ -29,18 +29,12 @@ ReactAppGenerator.prototype.askFor = function app() {
         type: 'confirm',
         name: 'useFlux',
         message: '是否用Flux? (推荐使用)'
-      },
-      {
-        type: 'confirm',
-        name: 'useRem',
-        message: '是否用Rem方案? (推荐使用)'
       }
     ];
   
   this.prompt(prompts, function(e) {
     this.appName = e.appName;
     this.useFlux = e.useFlux;
-    this.useRem = e.useRem;
     cb();
   }.bind(this));
 };
